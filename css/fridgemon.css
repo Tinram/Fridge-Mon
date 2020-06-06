@@ -1,0 +1,113 @@
+
+/**
+    * Stylesheet for Fridgemon.
+*/
+
+/* resets and defaults */
+html * {margin:0; padding:0;}
+html {font-size:1.25em;}
+body {font:50% verdana,Sans,FreeSans,sans-serif; margin:30px; background:#fff; color:#000;}
+
+img {border:0;}
+ul {list-style-type:none;}
+em {font-style:italic;}
+strong {font-weight:bold;}
+select, input, textarea {font-family:verdana,Sans,FreeSans,sans-serif;}
+input {height:19px;}
+h1 {margin-bottom:15px; color:#3b5998;}
+
+
+/* anchors */
+a, a:link, a:visited {text-decoration:none; color:#4b72c1;}
+a:hover, a:active {text-decoration:none; color:#00f !important;}
+a:focus {outline:none;}
+a.expired {color:#c00;}
+
+
+/* generic classes */
+.hide {display:none;}
+.clearboth {clear:both;}
+.floatleft {float:left;}
+.floatright {float:right;}
+.error {font-weight:bold; color:#c00; font-size:1.2em; line-height:1.5;}
+.success {font-weight:bold; color:#00c; font-size:1.2em; line-height:1.5;}
+.smalltext {font-size:1em;}
+div.spacer {margin:20px; padding:1px 0 0 0;}
+div.spacersmall {margin:20px;}
+div.formspacer {clear:both; margin-bottom:20px;}
+
+p {margin:10px 0 0 40px;}
+
+
+/* tables */
+table#allitems {font-size:1.2em; margin:40px 0 0 40px; table-layout:fixed;}
+table#allitems col {width:100px;}
+table#allitems col#nm {width:250px;}
+table#allitems col#notes {width:200px;}
+table#allitems th {text-align:left; padding:4px 4px 6px 4px;}
+table#allitems th:hover {cursor:pointer;}
+table#allitems td {padding:5px; vertical-align:top; max-width:200px;}
+table#allitems td a {font-weight:bold;}
+table#allitems textarea {font-size:1em; line-height:1; border:0; padding:1px;}
+th {text-align:left; background:#3a6cc9; color:#fff; padding:5px;}
+.teven {background:#e6ebf4;}
+.todd {background:#d3e2ff;}
+
+
+/* form containers */
+div#searchcont {margin-left:40px; width:260px;}
+div#showallcont, div#logoutcont {margin-left:90px;}
+div#newcont input, div#showallcont input {margin-top:0;}
+div#searchcont, div#newcont, div#showallcont, div#logoutcont {margin-top:40px; float:left;}
+div#itemcont {width:330px; padding-top:35px; margin:0 0 30px 60px;}
+div#itemcont input {width:220px;}
+div#searchtermcont {float:right; height:12px;}
+div#searchtermcont input, div#searchtermcont label {float:none;}
+div#searchtermcont label {position:relative; top:-8px; font-size:9px;}
+
+
+/* form borders */
+input[type='text'], input[type='password'] {border:1px solid #999; border-radius:4px;}
+input[type='submit'], select, textarea {border:1px solid #999; border-radius:6px;}
+input[type='submit']:hover {background:#ce2f2f; color:#fff; border:#ce2f2f; cursor:pointer;}
+
+
+input[type="submit"] {color:#444; background:#f7ffff; font-weight:bold; text-align:center; margin-top:5px; padding-bottom:2px; height:26px; background:linear-gradient(to bottom, #ffffff, #84abf4 100%);}
+
+
+/* form buttons */
+form input.updatebutton {clear:both; height:26px; margin-top:8px; padding-bottom:2px;}
+form input#savebutton {width:60px !important; margin-top:20px;}
+
+
+/* forms */
+form#search input {margin-bottom:3px;}
+form div {clear:both; height:22px; padding:1px; margin-bottom:3px; font-size:1.2em;}
+form label {position:relative; top:1px; float:left;}
+form span {float:right; color:#c00; margin-left:4px;}
+form input {border:1px solid #999; font-size:1em; width:180px; float:right; padding:1px;}
+form input#new {width:50px;}
+from input::-moz-focus-inner {border:0;}
+form select {width:140px; height:24px; font-size:1em; padding:2px; margin-top:3px; margin-bottom:7px; float:right;}
+form textarea {border:1px solid #999; font-size:1em; width:220px; float:right; padding:1px; margin-bottom:3px;}
+form#delete input#deletebutton, input#logoutall {font-size:9px; color:#fff; background:#900;}
+form#delete input#deletebutton {width:50px;}
+
+div.info input {color:#999; background:#eee; border:1px dotted #ccc; text-align:right;}
+form div.errorfield {height:11px; font-size:10px; display:none; float:right; color:#c00;}
+
+input#search_item {border:1px solid #999; font-size:1.3em; width:180px; height:21px; padding:2px;}
+
+
+/* ids */
+div#today {font-size:9px; position:relative; left:42px; top:36px;}
+div#itemdelete {float:left; margin:10px 0 0 70px;}
+div#submissionerrors {margin-left:62px; height:20px;}
+
+p#nojs {font-size:1.2em; font-weight:bold; color:#c00; margin:0 0 20px 0;}
+p#multiplenames a {font-size:1.3em; line-height:1.5; font-weight:bold; display:block; margin-left:20px;}
+p#error {margin:0 0 0 60px;}
+
+
+/* messages */
+.fade {color:#00c; font-weight:bold; font-size:1.2em; line-height:1.5; visibility:hidden; opacity:0; transition:visibility 0s 25s, opacity 2s linear;}
