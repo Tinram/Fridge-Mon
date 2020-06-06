@@ -95,6 +95,11 @@ The SQLite database schema is available at *sql/fridgemon.sql*
 Unsuccessful log-in attempts are recorded in *log/badlog.txt*
 
 
+## @TODO
+
++ Lots: fonts, email notifications ...
+
+
 ## Credits
 
 + Angel Marin and Paul Johnston: JavaScript SHA-256 hash function.
