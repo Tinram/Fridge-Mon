@@ -38,7 +38,7 @@ final class FridgeMon extends SQLA
 
         $rResults = $this->query($sAllQuery);
 
-        echo '<div id="today">' . date('d M', time()) . '</div>';
+        echo "\t\t\t<div id=\"today\">" . date('d M', time()) . '</div>';
 ?>
 
             <table id="allitems">
