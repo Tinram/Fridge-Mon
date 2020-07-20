@@ -12,7 +12,7 @@ final class FridgeMon extends SQLA
         *
         * @author       Martin Latter
         * @copyright    Martin Latter 21/05/2020
-        * @version      0.03
+        * @version      0.04
         * @license      GNU GPL version 3.0 (GPL v3); http://www.gnu.org/licenses/gpl.html
         * @link         https://github.com/Tinram/Fridge-Mon.git
     */
@@ -62,7 +62,7 @@ final class FridgeMon extends SQLA
             $bExpired = time() > strtotime($aRow['expiry']) ? true : false;
 
             $bInvalidDate = ( ! preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/i', $aRow['expiry'])) ? true : false;
-            $d = ($bInvalidDate) ? '' : date('D d M', strtotime($aRow['expiry']));
+            $d = ($bInvalidDate || strtotime($aRow['expiry']) === false) ? '' : date('D d M', strtotime($aRow['expiry']));
 
             echo '
                     <tr class="' . $sRowType . '">
