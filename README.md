@@ -10,9 +10,9 @@
 
 ## Purpose
 
-Food gets buried in my fridge and it's usually found only after the expiry date.
+Food used to get buried in my fridge, usually being found only after the expiry date.
 
-Fridge Mon is a simple web utility to help me prevent food rot and wastage.
+Fridge Mon is a simple utility placed on a web server that helps me prevent food rot and wastage.
 
 
 ## Requirements
